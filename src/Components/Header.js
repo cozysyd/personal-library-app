@@ -4,7 +4,7 @@ import "../index.css";
 const Header = ({ showForm, changeTextAndColor }) => {
   return (
     <header className="header">
-      <h2 className="app-header">Personal Library App</h2>
+      <h2 className="app-header">Personal Library</h2>
       <Button
         onClick={showForm}
         color={changeTextAndColor ? "purple" : "brown"}

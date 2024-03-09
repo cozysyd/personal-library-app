@@ -103,6 +103,10 @@ function App() {
               changeTextAndColor={showAddBook}
             />
             {showAddBook && <AddBook onSave={addBook} />}
+            <p>
+              Keep track of your favorite books here! Just click the 'Add'
+              button to begin recording your collection.
+            </p>
           </div>
           <div className="containerBooks">
             <h3>Number of Books: {books.length}</h3>
