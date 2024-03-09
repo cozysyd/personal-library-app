@@ -97,14 +97,14 @@ function App() {
         <div>
           <NavBar />
 
-          <div className="container">
+          <div className="containerBooks">
             <Header
               showForm={() => setShowAddBook(!showAddBook)}
               changeTextAndColor={showAddBook}
             />
             {showAddBook && <AddBook onSave={addBook} />}
           </div>
-          <div className="container">
+          <div className="containerBooks">
             <h3>Number of Books: {books.length}</h3>
 
             {books.length > 0 ? (
