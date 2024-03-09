@@ -12,7 +12,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#reviews">Recent Reviews</Nav.Link>
-            <Nav.Link href="#pricing">Top Picks</Nav.Link>
+            <Nav.Link href="#favorites">My Favorite Books</Nav.Link>
             <NavDropdown
               title="Monthly Book Club"
               id="collapsible-nav-dropdown"
@@ -29,10 +29,16 @@ function NavBar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Blog</Nav.Link>
+            <Nav.Link
+              href="https://cozysyd.github.io/cozysyd_blog/"
+              target="_blank"
+            >
+              Blog
+            </Nav.Link>
             <Nav.Link
               eventKey={2}
               href="https://www.goodreads.com/user/show/5441778-sydney"
+              target="_blank"
             >
               Goodreads
             </Nav.Link>
