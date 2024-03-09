@@ -1,12 +1,12 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Home from "./Pages/Home";
-import RecentReviews from "./Pages/RecentReviews";
-import FavBooks from "./Pages/FavBooks";
-import AboutBC from "./Pages/AboutBC";
-import RomanceBC from "./Pages/RomanceBC";
-import FantasyBC from "./Pages/FantasyBC";
-import ThrillerBC from "./Pages/ThrillerBC";
+import Home from "./Components/Home";
+import RecentReviews from "./Components/RecentReviews";
+import FavBooks from "./Components/FavBooks";
+import AboutBC from "./Components/AboutBC";
+import RomanceBC from "./Components/RomanceBC";
+import FantasyBC from "./Components/FantasyBC";
+import ThrillerBC from "./Components/ThrillerBC";
 import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
