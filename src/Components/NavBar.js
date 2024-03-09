@@ -2,29 +2,41 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Cozy Syd's Library</Navbar.Brand>
+        <Navbar.Brand>
+          <CustomLink to="/Home">Cozy Syd's Library</CustomLink>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#reviews">Recent Reviews</Nav.Link>
-            <Nav.Link href="#favorites">My Favorite Books</Nav.Link>
+            <Nav.Link>
+              <CustomLink to="/RecentReviews">Recent Reviews</CustomLink>
+            </Nav.Link>
+            <Nav.Link>
+              <CustomLink to="/FavBooks">My Favorite Books</CustomLink>
+            </Nav.Link>
             <NavDropdown
               title="Monthly Book Club"
               id="collapsible-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">Romance</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Fantasy</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Mystery/Thriller
+              <NavDropdown.Item>
+                <CustomLink to="/RomanceBC">Romance</CustomLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <CustomLink to="/FantasyBC">Fantasy</CustomLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <CustomLink to="/ThrillerBC">Thriller</CustomLink>
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                About Book Club
+              <NavDropdown.Item>
+                <CustomLink to="/AboutBC">About Book Club</CustomLink>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
@@ -46,6 +58,19 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+  );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
   );
 }
 
