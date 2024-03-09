@@ -93,20 +93,23 @@ function App() {
           </div>
         </div>
       ) : (
-        <div className="container">
-          <Header
-            showForm={() => setShowAddBook(!showAddBook)}
-            changeTextAndColor={showAddBook}
-          />
-          {showAddBook && <AddBook onSave={addBook} />}
+        <div>
+          <div className="container">
+            <Header
+              showForm={() => setShowAddBook(!showAddBook)}
+              changeTextAndColor={showAddBook}
+            />
+            {showAddBook && <AddBook onSave={addBook} />}
+          </div>
+          <div className="container">
+            <h3>Number of Books: {books.length}</h3>
 
-          <h3>Number of Books: {books.length}</h3>
-
-          {books.length > 0 ? (
-            <Books books={books} onDelete={deleteBook} onEdit={editBook} />
-          ) : (
-            "No Books Found!"
-          )}
+            {books.length > 0 ? (
+              <Books books={books} onDelete={deleteBook} onEdit={editBook} />
+            ) : (
+              "No Books Found!"
+            )}
+          </div>
         </div>
       )}
     </>
