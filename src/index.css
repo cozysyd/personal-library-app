@@ -38,6 +38,43 @@ body {
 .navbar {
   background-color: #e4d3e4;
 }
+a {
+  color: #000;
+  text-decoration: none;
+  background-color: 248, 249, 250;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: 248, 249, 250;
+}
+
+a:active {
+  color: #000;
+  text-decoration: none;
+  background-color: 248, 249, 250;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+  background-color: 248, 249, 250;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+  background-color: 248, 249, 250;
+}
+
+a.active.dropdown-item {
+  background-color: white;
+}
+
+.dropdown-item.active {
+  background-color: white;
+}
 .btn {
   display: inline-block;
   background: #000;
