@@ -33,7 +33,7 @@ body {
   min-height: 300px;
   padding: 30px;
   border-radius: 5px;
-  background-color: #f4ddef;
+  background-color: #efe5ed;
 }
 .btn {
   display: inline-block;
@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 .editIcon {
-  color: blue;
+  color: rgb(180, 91, 231);
   cursor: pointer;
 }
 .add-form {
