@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 
-const AddTask = ({ onSave }) => {
+const AddBook = ({ onSave }) => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [pages, setPages] = useState("");
@@ -106,4 +106,4 @@ const AddTask = ({ onSave }) => {
   );
 };
 
-export default AddTask;
+export default AddBook;
