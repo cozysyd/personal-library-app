@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import Books from "./Components/Books";
 import AddBook from "./Components/AddBook";
+import NavBar from "./Components/NavBar";
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import { v4 as uuidv4 } from "uuid";
@@ -94,6 +95,8 @@ function App() {
         </div>
       ) : (
         <div>
+          <NavBar />
+
           <div className="container">
             <Header
               showForm={() => setShowAddBook(!showAddBook)}
