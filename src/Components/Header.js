@@ -7,7 +7,7 @@ const Header = ({ showForm, changeTextAndColor }) => {
       <h2 className="app-header">Personal Library App</h2>
       <Button
         onClick={showForm}
-        color={changeTextAndColor ? "pink" : "purple"}
+        color={changeTextAndColor ? "hot pink" : "purple"}
         text={changeTextAndColor ? "Close" : "Add"}
       />
     </header>
