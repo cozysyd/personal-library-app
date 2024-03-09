@@ -35,6 +35,9 @@ body {
   border-radius: 5px;
   background-color: #e4d3e4;
 }
+.navbar {
+  background-color: #e4d3e4;
+}
 .btn {
   display: inline-block;
   background: #000;
