@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const AddTask = ({ onSave }) => {
   const [title, setTitle] = useState("");
@@ -6,6 +7,53 @@ const AddTask = ({ onSave }) => {
   const [pages, setPages] = useState("");
   const [genre, setGenre] = useState("");
   const [year, setYear] = useState("");
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!title && !author && !pages && !genre && !year) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your book details or close the form!",
+      });
+    } else if (!title && author && pages && genre && year) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your title!",
+      });
+    } else if (!author && title && pages && genre && year) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your author!",
+      });
+    } else if (!pages && title && author && genre && year) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your number of pages!",
+      });
+    } else if (!genre && title && author && pages && year) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your genre!",
+      });
+    } else if (!year && title && author && pages && genre) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fill in your publication year!",
+      });
+    } else {
+      onSave({ title, author, pages, genre, year });
+    }
+    setTitle("");
+    setAuthor("");
+    setPages("");
+    setGenre("");
+    setYear("");
+  };
   return (
     <form className="add-form" onSubmit={onSubmit}>
       <div className="form-control">
@@ -57,4 +105,5 @@ const AddTask = ({ onSave }) => {
     </form>
   );
 };
+
 export default AddTask;
