@@ -3,6 +3,14 @@ import Header from "./Components/Header";
 import Books from "./Components/Books";
 import AddBook from "./Components/AddBook";
 import NavBar from "./Components/NavBar";
+import RecentReviews from "./Pages/RecentReviews";
+import FavBooks from "./Pages/FavBooks";
+import AboutBC from "./Pages/AboutBC";
+import RomanceBC from "./Pages/RomanceBC";
+import FantasyBC from "./Pages/FantasyBC";
+import ThrillerBC from "./Pages/ThrillerBC";
+import { Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import { v4 as uuidv4 } from "uuid";
@@ -96,6 +104,17 @@ function App() {
       ) : (
         <div>
           <NavBar />
+          <div className="container">
+            <Routes>
+              <Route path="/home" element={<App />} />
+              <Route path="/reviews" element={<RecentReviews />} />
+              <Route path="/favbooks" element={<FavBooks />} />
+              <Route path="/aboutbc" element={<AboutBC />} />
+              <Route path="/romancebc" element={<RomanceBC />} />
+              <Route path="/fantasybc" element={<FantasyBC />} />
+              <Route path="/thrillerbc" element={<ThrillerBC />} />
+            </Routes>
+          </div>
 
           <div className="containerBooks">
             <Header
