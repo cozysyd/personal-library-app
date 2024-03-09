@@ -7,8 +7,14 @@ import Swal from "sweetalert2";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
+  const [loading, setloading] = useState(true);
   const [books, setBooks] = useState([]);
   const [showAddBook, setShowAddBook] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 3500);
+  }, []);
   const addBook = (book) => {
     const id = uuidv4();
     const newBook = { id, ...book };
@@ -56,20 +62,40 @@ function App() {
   };
   return (
     <>
-      <div className="container">
-        {/* App Header */}
-        <Header
-          showForm={() => setShowAddBook(!showAddBook)}
-          changeTextAndColor={showAddBook}
-        />
-        {/* Revealing the Add Task Form */}
-        {showAddBook && <AddBook onSave={addBook} />}
+      {loading ? (
+        <div className="spinnerContainer">
+          <div className="spinner-grow text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <div className="spinner-grow text-secondary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <div className="spinner-grow text-success" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <div className="spinner-grow text-danger" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <div className="spinner-grow text-warning" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      ) : (
+        <div className="container">
+          {/* App Header */}
+          <Header
+            showForm={() => setShowAddBook(!showAddBook)}
+            changeTextAndColor={showAddBook}
+          />
+          {/* Revealing the Add Task Form */}
+          {showAddBook && <AddBook onSave={addBook} />}
 
-        <h3>Number of Books: {books.length}</h3>
+          <h3>Number of Books: {books.length}</h3>
 
-        {/* Displaying Tasks */}
-        {books.length > 0 ? <Books books={books} /> : "No Task Found!"}
-      </div>
+          {/* Displaying Tasks */}
+          {books.length > 0 ? <Books books={books} /> : "No Books Found!"}
+        </div>
+      )}
     </>
   );
 }
