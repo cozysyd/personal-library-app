@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 
 function AboutBC() {
   return (
-    <div className="containerBooks">
+    <div className="containerContent">
       <Card>
         <Card.Header>What is Cozy Syd's Book Club?</Card.Header>
         <Card.Body>

@@ -9,9 +9,7 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand>
-          <CustomLink to="/Home">Cozy Syd's Library</CustomLink>
-        </Navbar.Brand>
+        <Navbar.Brand>Cozy Syd's Library</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

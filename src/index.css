@@ -35,6 +35,13 @@ body {
   border-radius: 5px;
   background-color: #e4d3e4;
 }
+.containerContent {
+  margin: 30px auto;
+  overflow: auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #e4d3e4;
+}
 .navbar {
   background-color: #e4d3e4;
 }

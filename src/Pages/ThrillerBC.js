@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 
 function ThrillerBC() {
   return (
-    <div className="containerBooks">
+    <div className="containerContent">
       <h1>2024 Thriller Book Club</h1>
       <br />
       <Card>

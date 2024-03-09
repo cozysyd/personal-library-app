@@ -106,8 +106,7 @@ function App() {
           <NavBar />
           <div className="container">
             <Routes>
-              <Route path="/home" element={<App />} />
-              <Route path="/reviews" element={<RecentReviews />} />
+              <Route path="/recentreviews" element={<RecentReviews />} />
               <Route path="/favbooks" element={<FavBooks />} />
               <Route path="/aboutbc" element={<AboutBC />} />
               <Route path="/romancebc" element={<RomanceBC />} />

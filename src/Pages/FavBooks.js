@@ -5,27 +5,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function FavBooks() {
   return (
     <body>
-      <h1>Cozy Syd's Favorite Books</h1>
-      <p>Here's a favorite book of mine from each of my go to genres!</p>
+      <div className="containerContent">
+        <h1>Cozy Syd's Favorite Books</h1>
+        <p>Here's a favorite book of mine from each of my go to genres!</p>
+      </div>
 
       <br />
-
-      <TopRomance />
-
-      <hr />
-
-      <TopFantasy />
+      <div className="containerContent">
+        <TopRomance />
+      </div>
 
       <hr />
+      <div className="containerContent">
+        <TopFantasy />
+      </div>
 
-      <TopThriller />
+      <hr />
+      <div className="containerContent">
+        <TopThriller />
+      </div>
     </body>
   );
 }
 
 function TopRomance() {
   return (
-    <Card className="containerBooks">
+    <Card>
       <Card.Header>My Favorite Romance Book</Card.Header>
       <Card.Body>
         <Card.Title>Spoiler Alert by Olivia Dade</Card.Title>
@@ -58,7 +63,7 @@ function TopRomance() {
 
 function TopFantasy() {
   return (
-    <Card className="containerBooks">
+    <Card>
       <Card.Header>My Favorite Fantasy Book</Card.Header>
       <Card.Body>
         <Card.Title>House of Earth and Blood by Sarah J. Maas</Card.Title>
@@ -86,7 +91,7 @@ function TopFantasy() {
 
 function TopThriller() {
   return (
-    <Card className="containerBooks">
+    <Card>
       <Card.Header>My Favorite Thriller Book</Card.Header>
       <Card.Body>
         <Card.Title>The Silent Patient by Alex Michaelides</Card.Title>
