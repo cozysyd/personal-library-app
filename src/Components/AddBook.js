@@ -101,7 +101,7 @@ const AddBook = ({ onSave }) => {
           onChange={(e) => setYear(e.target.value)}
         />
       </div>
-      <input type="submit" className="btn btn-block" value="Save Task" />
+      <input type="submit" className="btn btn-block" value="Save Book" />
     </form>
   );
 };
