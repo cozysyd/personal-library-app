@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function RecentReviews() {
   return (
-    <div>
+    <div className="containerBooks">
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>

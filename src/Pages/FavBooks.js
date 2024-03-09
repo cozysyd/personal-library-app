@@ -1,5 +1,4 @@
 import * as React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,7 +25,7 @@ function FavBooks() {
 
 function TopRomance() {
   return (
-    <Card>
+    <Card className="containerBooks">
       <Card.Header>My Favorite Romance Book</Card.Header>
       <Card.Body>
         <Card.Title>Spoiler Alert by Olivia Dade</Card.Title>
@@ -52,7 +51,6 @@ function TopRomance() {
           career on the line, can the two of them stop hiding once and for all,
           or will a match made in fandom end up prematurely cancelled?
         </Card.Text>
-        <Button variant="primary">Buy Now</Button>
       </Card.Body>
     </Card>
   );
@@ -60,7 +58,7 @@ function TopRomance() {
 
 function TopFantasy() {
   return (
-    <Card>
+    <Card className="containerBooks">
       <Card.Header>My Favorite Fantasy Book</Card.Header>
       <Card.Body>
         <Card.Title>House of Earth and Blood by Sarah J. Maas</Card.Title>
@@ -81,7 +79,6 @@ function TopFantasy() {
           each other, a blazing passion-one that could set them both free, if
           they'd only let it.
         </Card.Text>
-        <Button variant="primary">Buy Now</Button>
       </Card.Body>
     </Card>
   );
@@ -89,7 +86,7 @@ function TopFantasy() {
 
 function TopThriller() {
   return (
-    <Card>
+    <Card className="containerBooks">
       <Card.Header>My Favorite Thriller Book</Card.Header>
       <Card.Body>
         <Card.Title>The Silent Patient by Alex Michaelides</Card.Title>
@@ -111,7 +108,6 @@ function TopThriller() {
           into his own motivations—a search for the truth that threatens to
           consume him....
         </Card.Text>
-        <Button variant="primary">Buy Now</Button>
       </Card.Body>
     </Card>
   );
