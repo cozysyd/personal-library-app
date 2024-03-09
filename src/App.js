@@ -15,6 +15,14 @@ function App() {
       setloading(false);
     }, 3500);
   }, []);
+  const getBooks = JSON.parse(localStorage.getItem("bookAdded"));
+  useEffect(() => {
+    if (getBooks == null) {
+      setBooks([]);
+    } else {
+      setBooks(getBooks);
+    }
+  }, [getBooks]);
   const addBook = (book) => {
     const id = uuidv4();
     const newBook = { id, ...book };
@@ -24,6 +32,7 @@ function App() {
       title: "Yay...",
       text: "You have successfully added a new book!",
     });
+    localStorage.setItem("bookAdded", JSON.stringify([...books, newBook]));
   };
   const deleteBook = (id) => {
     const deleteBook = books.filter((book) => book.id !== id);
@@ -33,6 +42,7 @@ function App() {
       title: "Oops...",
       text: "You have successfully deleted a task!",
     });
+    localStorage.setItem("bookAdded", JSON.stringify(deleteBook));
   };
   const editBook = (id) => {
     const title = prompt("Title");
@@ -59,6 +69,8 @@ function App() {
       title: "Yay...",
       text: "You have successfully edited an existing book!",
     });
+    localStorage.setItem("bookAdded", JSON.stringify(myData));
+    window.location.reload();
   };
   return (
     <>
@@ -82,18 +94,19 @@ function App() {
         </div>
       ) : (
         <div className="container">
-          {/* App Header */}
           <Header
             showForm={() => setShowAddBook(!showAddBook)}
             changeTextAndColor={showAddBook}
           />
-          {/* Revealing the Add Task Form */}
           {showAddBook && <AddBook onSave={addBook} />}
 
           <h3>Number of Books: {books.length}</h3>
 
-          {/* Displaying Tasks */}
-          {books.length > 0 ? <Books books={books} /> : "No Books Found!"}
+          {books.length > 0 ? (
+            <Books books={books} onDelete={deleteBook} onEdit={editBook} />
+          ) : (
+            "No Task Found!"
+          )}
         </div>
       )}
     </>
