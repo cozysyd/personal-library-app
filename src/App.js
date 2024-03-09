@@ -65,6 +65,8 @@ function App() {
         {/* Revealing the Add Task Form */}
         {showAddBook && <AddBook onSave={addBook} />}
 
+        <h3>Number of Books: {books.length}</h3>
+
         {/* Displaying Tasks */}
         {books.length > 0 ? <Books books={books} /> : "No Task Found!"}
       </div>
