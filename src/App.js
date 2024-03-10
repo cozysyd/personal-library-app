@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import RecentReviews from "./Components/RecentReviews";
