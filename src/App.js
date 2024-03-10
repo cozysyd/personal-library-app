@@ -1,5 +1,3 @@
-import "./App.css";
-import "./index.css";
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import RecentReviews from "./Components/RecentReviews";
@@ -10,6 +8,8 @@ import FantasyBC from "./Components/FantasyBC";
 import ThrillerBC from "./Components/ThrillerBC";
 import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./index.css";
 
 function App() {
   return (

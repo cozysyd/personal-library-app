@@ -44,6 +44,15 @@ body {
 }
 .navbar {
   background-color: #e4d3e4;
+  text-decoration: none;
+}
+.bg-body-tertiary {
+  background-color: #e4d3e4;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px;
 }
 a {
   color: #000;
