@@ -1,7 +1,8 @@
-import "./App.css";
-import Header from "./Components/Header";
-import Books from "./Components/Books";
-import AddBook from "./Components/AddBook";
+import "../App.css";
+import "../index.css";
+import Header from "./Header.js";
+import Books from "./Books.js";
+import AddBook from "./AddBook.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
