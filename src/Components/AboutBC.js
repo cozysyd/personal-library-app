@@ -21,17 +21,6 @@ function AboutBC() {
           </Card.Text>
         </Card.Body>
       </Card>
-      <br />
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Previous Picks</Accordion.Header>
-          <Accordion.Body>
-            <p>February: The Maidens by Alex Michaelides</p>
-            <br />
-            <p>January: Pretty Girls by Karin Slaughter</p>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
     </div>
   );
 }
