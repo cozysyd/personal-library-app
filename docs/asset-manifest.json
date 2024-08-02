@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/personal-library-app/static/css/main.814ffcf7.css",
+    "main.js": "/personal-library-app/static/js/main.245febc9.js",
+    "static/js/453.bfd73099.chunk.js": "/personal-library-app/static/js/453.bfd73099.chunk.js",
+    "static/media/book-arrangment.jpg": "/personal-library-app/static/media/book-arrangment.0f69c619099a811e247f.jpg",
+    "index.html": "/personal-library-app/index.html",
+    "main.814ffcf7.css.map": "/personal-library-app/static/css/main.814ffcf7.css.map",
+    "main.245febc9.js.map": "/personal-library-app/static/js/main.245febc9.js.map",
+    "453.bfd73099.chunk.js.map": "/personal-library-app/static/js/453.bfd73099.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.814ffcf7.css",
+    "static/js/main.245febc9.js"
+  ]
+}
