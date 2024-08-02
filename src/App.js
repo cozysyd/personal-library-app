@@ -17,13 +17,25 @@ function App() {
       <NavBar />
       <div className="container">
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/recentreviews" element={<RecentReviews />} />
-          <Route path="/favbooks" element={<FavBooks />} />
-          <Route path="/aboutbc" element={<AboutBC />} />
-          <Route path="/romancebc" element={<RomanceBC />} />
-          <Route path="/fantasybc" element={<FantasyBC />} />
-          <Route path="/thrillerbc" element={<ThrillerBC />} />
+          <Route path="/personal-library-app/home" element={<Home />} />
+          <Route
+            path="/personal-library-app/recentreviews"
+            element={<RecentReviews />}
+          />
+          <Route path="/personal-library-app/favbooks" element={<FavBooks />} />
+          <Route path="/personal-library-app/aboutbc" element={<AboutBC />} />
+          <Route
+            path="/personal-library-app/romancebc"
+            element={<RomanceBC />}
+          />
+          <Route
+            path="/personal-library-app/fantasybc"
+            element={<FantasyBC />}
+          />
+          <Route
+            path="/personal-library-app/thrillerbc"
+            element={<ThrillerBC />}
+          />
         </Routes>
       </div>
     </div>

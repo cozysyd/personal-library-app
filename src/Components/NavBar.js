@@ -10,33 +10,47 @@ function NavBar() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand>
-          <CustomLink to="/Home">Cozy Syd's Library</CustomLink>
+          <CustomLink to="/personal-library-app/Home">
+            Cozy Syd's Library
+          </CustomLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <CustomLink to="/RecentReviews">Recent Reviews</CustomLink>
+              <CustomLink to="/personal-library-app/RecentReviews">
+                Recent Reviews
+              </CustomLink>
             </Nav.Link>
             <Nav.Link>
-              <CustomLink to="/FavBooks">My Favorite Books</CustomLink>
+              <CustomLink to="/personal-library-app/FavBooks">
+                My Favorite Books
+              </CustomLink>
             </Nav.Link>
             <NavDropdown
               title="Monthly Book Club"
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item>
-                <CustomLink to="/RomanceBC">Romance</CustomLink>
+                <CustomLink to="/personal-library-app/RomanceBC">
+                  Romance
+                </CustomLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <CustomLink to="/FantasyBC">Fantasy</CustomLink>
+                <CustomLink to="/personal-library-app/FantasyBC">
+                  Fantasy
+                </CustomLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <CustomLink to="/ThrillerBC">Thriller</CustomLink>
+                <CustomLink to="/personal-library-app/ThrillerBC">
+                  Thriller
+                </CustomLink>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
-                <CustomLink to="/AboutBC">About Book Club</CustomLink>
+                <CustomLink to="/personal-library-app/AboutBC">
+                  About Book Club
+                </CustomLink>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
