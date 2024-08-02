@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd41d350.css",
-    "main.js": "/static/js/main.72f19e14.js",
-    "static/js/453.bfd73099.chunk.js": "/static/js/453.bfd73099.chunk.js",
-    "static/media/book-arrangment.jpg": "/static/media/book-arrangment.0f69c619099a811e247f.jpg",
-    "index.html": "/index.html",
-    "main.bd41d350.css.map": "/static/css/main.bd41d350.css.map",
-    "main.72f19e14.js.map": "/static/js/main.72f19e14.js.map",
-    "453.bfd73099.chunk.js.map": "/static/js/453.bfd73099.chunk.js.map"
+    "main.css": "/personal-library-app/static/css/main.814ffcf7.css",
+    "main.js": "/personal-library-app/static/js/main.72ce842b.js",
+    "static/js/453.bfd73099.chunk.js": "/personal-library-app/static/js/453.bfd73099.chunk.js",
+    "static/media/book-arrangment.jpg": "/personal-library-app/static/media/book-arrangment.0f69c619099a811e247f.jpg",
+    "index.html": "/personal-library-app/index.html",
+    "main.814ffcf7.css.map": "/personal-library-app/static/css/main.814ffcf7.css.map",
+    "main.72ce842b.js.map": "/personal-library-app/static/js/main.72ce842b.js.map",
+    "453.bfd73099.chunk.js.map": "/personal-library-app/static/js/453.bfd73099.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd41d350.css",
-    "static/js/main.72f19e14.js"
+    "static/css/main.814ffcf7.css",
+    "static/js/main.72ce842b.js"
   ]
 }
